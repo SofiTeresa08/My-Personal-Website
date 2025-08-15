@@ -1,0 +1,308 @@
+/* STYLE SECTIONING TAGS */
+*{
+  margin: 20px;
+  padding: 0px;
+}
+body {
+ background-color: #000000; 
+}
+
+/* TYPEWRITER*/
+
+.typewriter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  padding-top: calc(45vh - 185px);
+}
+
+.typewriter-line {
+  font-family: 'Courier New', Courier, monospace;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 32px;
+  margin: 5px auto;
+  max-width: 800px;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  line-height: 2;
+}
+
+.line1 {
+  animation: 
+    typing 2s steps(25) 0.5s both,
+    cursor .75s step-end 2.5s,
+    removeCursor 0s 2.5s both;
+  border-right: 3px solid transparent;
+}
+
+.line2 {
+  animation: 
+    typing 2.5s steps(37) 3s both,
+    cursor .75s step-end 5.5s,
+    removeCursor 0s 5.5s both;
+  border-right: 3px solid transparent;
+}
+
+.line3 {
+  animation: 
+    typing 3s steps(42) 6s both,
+    cursor .75s step-end 9s,
+    removeCursor 0s 9s both;
+  border-right: 3px solid transparent;
+}
+
+/* STYLE TEXT */
+h2 {
+  font-family:'Courier New', Courier, monospace;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px ;
+  padding-left:150px;
+  padding-right: 150px;
+}
+h3 {
+  color: #FFFFFF;
+  font-family: 'Courier', monospace;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+  padding-left:200px;
+  padding-right:200px;
+  line-height: 1.75;
+}
+h4 {
+   color: #FFFFFF;
+    font-family: 'Courier', monospace;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.75;
+}
+
+/* STYLE IMAGES */
+img {
+  max-width: 400px;
+  max-height: 350px;
+}
+/* STYLE NAV BAR */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1em;
+  color: white;
+  text-align: center;
+}
+li {
+  display: inline;
+  color: white;
+}
+/* UNVISITED LINK */
+a:link {
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* links inside h2 should inherit h2 font size */
+h2 a:link, h2 a:visited, h2 a:hover {
+  font-size: inherit;
+  text-decoration: underline;
+}
+/* links inside h4 should inherit h4 font size */
+h4 a:link, h4 a:visited, h4 a:hover {
+  font-size: inherit;
+  text-decoration: underline;
+}
+/* VISITED LINK */
+a:visited {
+  color: #f5e324;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  }
+/* HOVER EFFECT LINKS */
+a:hover {
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  }
+/* TYPEWRITER EFFECT FOR HOME PAGE */
+.container {
+  display: inline-block;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter p {
+  font-family: 'Courier New';
+  font-size: 40px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+/* KEYFRAMES FOR TYPEWRITER ANIMATION */
+@keyframes typing {
+  from { 
+    width: 0;
+    opacity: 1;
+  }
+  to { 
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes cursor {
+  from, to { 
+    border-right-color: #FFFFFF; 
+  }
+  50% { 
+    border-right-color: transparent; 
+  }
+}
+
+@keyframes removeCursor {
+  to {
+    border-right-color: transparent !important;
+  }
+}
+/* CARD CONTAINER FOR LAYOUT */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+/* FLIIPING CARDS */
+.card {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  cursor: pointer;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  position: absolute;
+  overflow: hidden;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+.card .front img {
+  position: absolute;
+  dipslay: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  border-radius: 0;          
+  border: none;              
+  box-shadow: none;  
+}
+
+.card .front h5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  background: rgba(0,0,0,0.7);
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  padding: 0;
+  z-index: 2;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #2F4F4F;
+  height: 350px;
+  width: 400px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+  z-index: 2;
+}
+
+.card .back p {
+  line-spacing: 1.5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;  
+}
+
+/* VIDEO CONTAINER FOR LAYOUT */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px;  /* space between items */
+  margin: 50px auto;
+  max-width: 840px;
+  justify-items: center;  
+}
+
+/* VIDEO ITEM STYLE */
+.video-item {
+  text-align: center;
+  margin: 0;
+  width: 100%;  /* ensure video items take up full width of their grid cell */
+}
+
+.video-item iframe {
+  width: 100%; /* ensure iframe fills the entire container */
+  height: 200px; /* adjust the height to your desired size */
+  border-radius: 10px;
+}
+
+.video-item h3 {
+  margin-top: 15px;
+  padding: 0;
+  font-size: 15px;
+}
