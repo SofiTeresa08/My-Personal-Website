@@ -102,7 +102,7 @@ li {
 /* UNVISITED LINK */
 a:link {
   color: #FFFFFF;
-  font-family: 'Cousine', Courier New, monospace;
+  font-family: 'Courier New', monospace;
   font-size: 25px;
   text-decoration: none;
 }
@@ -120,13 +120,13 @@ h4 a:link, h4 a:visited, h4 a:hover {
 /* VISITED LINK */
 a:visited {
   color: #f5e324;
-  font-family: 'Cousine', Courier New, monospace;
+  font-family: 'Courier New', monospace;
   text-decoration: none;
   }
 /* HOVER EFFECT LINKS */
 a:hover {
   color: #00ff00;
-  font-family: 'Cousine', Courier New, monospace;
+  font-family: 'Courier New', monospace;
   }
 /* TYPEWRITER EFFECT FOR HOME PAGE */
 .container {
