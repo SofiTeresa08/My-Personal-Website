@@ -81,11 +81,6 @@ h4 {
     font-size: 25px;
     line-height: 1.75;
 }
- h5 {
-   color: #ffffff;
-   font-family: "Courier New";
-   font-size: 20px;
- }
 /* STYLE IMAGES */
 img {
   max-width: 400px;
@@ -352,7 +347,18 @@ img {
   .blog-text .blog-title:hover{
     color: #00ff00;
   }
-  
+  .blog-text p{
+    color:#ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 0.9 rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+  }
+    
     
     
   
