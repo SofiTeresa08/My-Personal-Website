@@ -358,7 +358,12 @@ img {
     text-overflow: ellipsis;
     margin: 20px 0px;
   }
-    
+    .blog-text a{
+      color: #ffffff;
+    }
+  .blog-text a:hover{
+    color:#00ff00;
+  }
     
     
   
