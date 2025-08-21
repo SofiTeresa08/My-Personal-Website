@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>About Me—Sofia C.</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	  <!-- link the webpage's stylesheet -->
+	<link rel="stylesheet" href="style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+  <!-- Google Fonts-->
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+  </head>
+    
+ <body>
+
+  <header>
+    <div class="bar">
+      <!-- Back to main page -->
+      <a class="back" href="writing.html" aria-label="Back to main page">
+        <!-- simple left arrow -->
+        <span aria-hidden="true">←</span>
+        <span>Back</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Cryptography: A Brief History of the Most Useful Mathematical Field of Our Time</h1>
+    <div class="meta" aria-label="Article information">
+      <time datetime="2025-08-21" title="Published date">Aug 21, 2025</time>
+      <span class="dot" aria-hidden="true"></span>
+      <span>6 min read</span>
+    </div>
+    <h3>INTRODUCTION
+ 
+Everyone benefits from cryptography daily. When you send an email, a Snap, or use a credit card, you are actively using encryption to protect your everyday tasks. To do anything on the internet, you are constantly inputting information about yourself, none of which is ever meaningless to cybercriminals. As the world becomes increasingly digital, the need to protect all of this data becomes indisputable.
+
+ The field of cryptography is an unusually exciting one. It involves the struggle of humanity to maintain its secrets—recipes, leaders’ communications, lovers’ letters, and war plans being among them. It helped the success of Caesar as well as the defeat of Hitler. All for it to be made possible by seemingly useless observations and theoretical studies like mathematics. 
+
+THE HISTORY OF CRYPTOGRAPHY
+
+The word cryptography comes from the Greek kryptós, meaning “hidden,” and graphia meaning “writing.” (Barnhart 240)  Encryption transforms plaintext into ciphertext. Decryption reverses this process, restoring it to readable text. Both encryption and decryption are accomplished using a cipher, or a cryptographic algorithm more commonly referred to as the code. 
+
+The earliest known use of encryption appears in Mesopotamia around 1500 B.C. A potter wrote down his method of making glaze,  which was significant in the process of the renowned Mesopotamian pottery. The instructions were written in a pocket-size tablet but had missing letters, and in their place some wedge-shaped symbols. (Pincock 12)
+
+One of the most famous ciphers in history is linked to Julius Caesar. Roman historian Suetonius writes that Caesar’s confidential military correspondence was written in a cipher. The Caesar Cipher substitutes each letter in the alphabet with a letter a fixed number of positions down the alphabet. For example, with a shift of 1, letter A would be replaced by letter B, letter B would be replaced by letter C, and so on. This is what is called a substitution or transposition cipher; Caesar used a key/shift of 3. Although this alphabetic shift is now viewed as child’s play, it must have heavily baffled Caesar's enemies. Caesar also had the advantage that ancient Latin and Greek texts were written without spacing and word division, which clearly must have made the encrypted message look like gibberish to the interceptor (Pincock 17). Ninth-century polymath al-Kindi made the first recorded deciphering of this cipher using frequency analysis. Frequency analysis, or the recognition of how some letters and words are used more frequently than others in a language, is one of the earliest techniques of cryptanalysis (Pincock 23). 
+
+Image Source: https://commons.wikimedia.org/wiki/File:English_letter_frequency_(alphabetic).svg 
+
+Al-kindi also wrote of other cryptoanalytic methods in his work A Manuscript on Deciphering Cryptographic Messages. 
+
+In the 15th century, Leon Battista Alberti was employed to encrypt the pope’s correspondence. He developed the first recorded polyalphabetic cipher. Alberti made a cipher disk in which the outer ring had an alphabet; an inner ring had one as well.
+
+ He would choose a key, say align A to X, and encrypt the message like a typical Caesar cipher. However, at some point, he would rotate the disk and change the key, instantly making decryption harder. It made frequency analysis unusable because the same letter could be enciphered differently (Pincock 42). Alberti’s work inspired more complex polyalphabetic ciphers, one of the most popular ones being the Vigenère cipher. The Vigenère used a repeating keyword that shifted each letter by the alphabetical value of its corresponding key letter.
+Image: Vigenère Cipher Example created by author.
+
+The advantage of this system is that it has a unique key that yields different ciphers for each letter. This resists frequency analysis, though a variation of it, studying repeated sequences of letters, is a tool for its cryptanalysis (Pincock 52).  
+
+PROTECTING INSTANTANEOUS MESSAGING 
+
+The creation of Morse Code in 1833 gave the world the most rapid and effective communication it had up to that point. Everyone, even governments and militaries, turned to using the telegram to communicate. There was one drawback: privacy. Operators had to read the message in order to transmit it. Nevertheless , it did not stop people with confidential transmissions from using the telegram. They simply gave the operators an enciphered message. Dozens of users developed/determined their own private cryptosystems. The military, for one, turned to the Vigenère cipher for their telegrammed messages (Pincock 67). This practice of encrypting digital communications is still practiced in our modern world, even though most are oblivious to it. 
+
+HOW MATHEMATICS HELPED WIN A WAR
+
+German engineer Dr. Arthur Scherbius developed the Enigma machine in the 1920s. Around the size of a laptop, it consisted of a keyboard and, above it, lamps with each of the 26 letters on them. Each time a key was pressed, a lamp lit up, showing what the corresponding encrypted letter was. 
+
+Image Source: https://commons.wikimedia.org/wiki/File:Muzeum_2_Wojny_Swiatowej_Gdansk_Enigma_cipher_machine.jpg
+The twist, of course, was that when the next letter was typed, rotors, or spinning cylinders, would change up the internal wiring to the lights. So with every different rotor position, you would get a new cipher. It had 3 rotors: a right, center, and left one. Each rotor had a notch that signaled the machine when to switch to the next rotor. So, for example, the operator could set the right rotor to switch rotors after 10 rotations, while, in turn, the center could be programmed to switch after, say, 26 rotations. That was not all. The machine also featured a plugboard in the front: 26 holes where the operator could freely plug in cables to pair random letters. If A was linked to K, every time it was typed, an A would be transmitted to the rotors as a K. It was calculated that there were 158 million million million possible ways of setting up the machine (Pincock 103)! Deciphering seemed nearly impossible to do unless you had the specific settings of the machine. 
+
+Nevertheless, in 1932 Polish mathematicians Marian Rejewski, Jerzy Rozycki, and Henryk Zygalski found the way to crack it: Group Theory (Christensen 252). Simply put, Group Theory is the study of the elements that make up a set; it’s a subset of algebra that heavily uses combinatorics. The key to deciphering is so simple it’s even laughable: The Enigma is a machine. It’s programmed to give a certain output. This output is reversible. 
+
+The Poles first realized that the Germans were writing a three-letter sequence twice at the beginning of each message, which described initial rotor settings. The breakthrough came when the Polish found that the machine utilized permutation groups, or letter cycles. Say the machine was programmed to transpose A to J. J then transposed to Q, Q transposed to E, and E finally transposed back to A.
+
+Image created by author. 
+ These cycles occurred for all letters of the alphabet: two pairs of cycles with four letters and another two with nine letters (Pincock 101). Even if the plugboard was used, the underlying group theory remained because it is simply an involution. An involution is something that if you do twice, you’re back to where you started (e.g., A gives Z, Z gives A). Mathematically it could be written S*S=I, where S is the plugboard’s permutation. Added to this was the enigma’s structural weakness that a letter could not encrypt to itself. Even though they had it all mathematically figured out, they had to manually figure out and write down the letter cycles for thousands of encountered rotor settings. This was woeful labor in a computer-less world! The mathematical win was brief, however. In 1938, the Germans changed the way the Enigma worked by including 5 rotors for the operator to choose 3 out of (Pincock 106), and they also encrypted the initial sequence used to indicate rotor settings (Pincock 104) . This made the Polish catalogs instantly unusable! One can only imagine the despair the Polish must have felt as their work went to nothing. Yet, the overall group theory concepts would prove priceless. It was what later helped mathematician Alan Turing to develop the “Bombe” machine to aid decryption efforts in England’s Bletchley Park. 
+
+MODERN CRYPTOGRAPHY
+
+Mathematics drives our cryptographic methods up to date. The RSA encryption, developed in 1977 by mathematician Clifford Cocks, relies on number theory by making use of the difficulty of factoring large composite numbers into their prime factors. It’s a bit complicated and lengthy to explain how the RSA works with these numbers, but the main point is that it makes it ridiculously hard to decrypt (Luciano and Prichett 9). 2014 Fields Medal winner Maryam Mirakhani’s work on Riemann surfaces, or the mapping of imaginary numbers on curved surfaces, has also been lately applied to Elliptic Curve Cryptography (Lees and Farndon 337). In the most simple terms, it sums two points on a curve, which is not very difficult to do, but very hard to revert back (Koblitz 205). And there are so many more applications of seemingly theoretical mathematics in cryptography.
+
+ The rise of quantum computing puts traditional cryptographical methods in a dangerous position because they can try various solutions all at once! The need to develop quantum-resistant algorithms becomes evident. Like mathematics, this field will require originality of thought, since new ciphers and also ways to crack them are needed. Cryptography and math are also similar in the sense that they require a lot of perseverance, which is something anyone who has studied mathematics understands. The future holds endless possibilities for all who are willing, like the Poles, to labor in the unknown and yet start again when needed. 
+</h3>
+  </main>
+
+</body>
+</html>
+      
+      <footer>
+        <p>Sofia C. © 2025</p>
+      </footer>
+
+      <style>
+        footer {
+          color: white;
+          font-family: "Courier New", Courier, monospace;
+          font-size: 15px;
+          text-align: center;
+        }
+      </style>
+  </body>
+  
+  </head>
+</html>
