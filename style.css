@@ -333,4 +333,10 @@ img {
   object-fit: cover;
   object-position: center;
 }
+  .blog-text span {
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 0.9 rem;
+  }
+    
   
