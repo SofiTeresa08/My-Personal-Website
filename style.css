@@ -338,5 +338,17 @@ img {
     font-family: "Courier New", monospace;
     font-size: 0.9 rem;
   }
+
+  .blog-text .blog-title {
+    font-size: 1.3 rem;
+    font-family: "Courier New", monospace;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .blog-text .blog-title:hover{
+    color: #00ff00;
+  }
+  
+    
     
   
