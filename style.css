@@ -313,6 +313,7 @@ img {
   --text: #e5e7eb;
   --muted: #9ca3af;
   --tag-bg: #1f2937;
+    border: 1px solid #ffffff; 
   --accent: #6366f1; /* blue accent */
 }
 
