@@ -54,7 +54,25 @@
     <img src="sc-logo.png" alt="A circular white personal logo of the initials 'S' and 'C' intertwined creatively. Below these initials is written 'Sofia C.' in a modern, white font." />
     <center>
     <h3>I'm a 17-year-old driven by curiosity and passion for the world. Full-time autodidact. I spend my time exploring mathematics, programming, design, writing, literature, and music—each a different language I use to understand life in its various aspects.</h3>
-      
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="78cf9e74-3f39-4aee-b3fa-bbd4969a85c4">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    <button type="submit">Submit Form</button>
+
+</form>
       <footer>
         <p>Sofia C. © 2025</p>
       </footer>
